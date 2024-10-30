@@ -1,0 +1,156 @@
+/* The Modal (background) */
+.hiecor-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 99999; /* Sit on top */
+  padding-top: 70px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.hiecor-modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  border-radius: 6px;
+  width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.hiecor-modal-close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.hiecor-modal-close:hover,
+.hiecor-modal-close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.hiecor-modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/*******Model popup************/
+
+.hiecor_pos_iframe_button{
+	padding: 6px 12px;
+    color: #fff;
+    background-color: #0B76C9;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.hiecor_pos_iframe_button:hover {
+    color: #fff;
+    background-color: #1f86d8;
+    border-color: #2196f3;
+}
+
+#hiecorIframeModal .hiecor-modal-header {
+    padding: 7px 15px;
+    border-bottom: 1px solid #e5e5e5;
+    background: #3376C9;
+    color: #fff;
+    border-radius: 4px 4px 0px 0px;
+    height: 40px;
+}
+
+#hiecorIframeModal .hiecor-modal-footer {
+    padding: 15px;
+    color: white;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+    background: none;
+}
+
+.btn{
+	padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+	cursor:pointer;
+}
+
+#hiecorIframeModal .close_popup {
+    color: #fff;
+    background-color: #d9534f;
+}
+
+#hiecorIframeModal .close_popup:hover {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+
+#hiecorIframeModal .custom_add_to_cart{
+	color: #fff;
+    background-color: #4ba614;
+}
+
+#hiecorIframeModal .custom_add_to_cart:hover{
+	background-color: #489e14;
+    border-color: #489e14;
+}
+
+#hiecor-loader{
+	top: 200px;
+    position: relative;
+    left: 45% !important;
+}
+
+.hiecor-modal-body {padding: 15px;}
+
+
+@media all and (max-width: 1024px) and (min-width: 768px) {
+	.hiecor-modal { padding-top: 100px;}
+	.hiecor-modal-body {padding: 0px;}
+}
+
+@media screen and (max-width: 767px) {
+	.hiecor-modal { padding-top: 100px;}
+	#hiecorIframeModal .hiecor-modal-content {width: 95%;}
+	
+}
+.hcv4_info.woocommerce-info a {
+  text-decoration: underline !important;
+}
+
+.hcv4_info.woocommerce-info {
+  background: #2ea3f2 !important;
+}
+
+.woocommerce-order-received .hcv4_info.woocommerce-info {
+  display: none !important;
+}
